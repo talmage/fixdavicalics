@@ -13,4 +13,3 @@ psql davical -Atc "SELECT array_to_string(array(SELECT caldav_data FROM caldav_d
 psql davical -Atc "SELECT array_to_string(array(SELECT caldav_data FROM caldav_data WHERE dav_name LIKE '/talmage/churchCalendar/%'),'');" > churchCalendar.ics
 
 psql davical -Atc "SELECT array_to_string(array(SELECT caldav_data FROM caldav_data WHERE dav_name LIKE '/talmage/datesOfNote/%'),'');" > datesOfNote.ics
-datesOfNote
