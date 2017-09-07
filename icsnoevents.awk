@@ -42,8 +42,11 @@ function filter(line,inCalendar) {
 	next
 }
 
+#
+# Filter VEVENTS
+#
 /^BEGIN:VEVENT/ {
-	inVcalendar = 0
+	inVcalendar = 1
 	filter($0, inVcalendar)
 	next
 }
